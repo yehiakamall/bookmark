@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #F7ECDE;
+}
+h2{
+    text-align: center;
+    /* margin-top: 100px; */
+    padding-top:50px;
+    padding-bottom:50px;
+    font-size: 50px;
+    position: relative;
+    font-family: "Pacifico", cursive;
+    transition: all 2s ease  ;
+}
+h2::before {
+    content: '';
+    position: absolute;
+    bottom: 30%; /* Adjust to align with the text */
+    left: 39%;
+    right: 39%;
+    height: 10%; /* Adjust height of the highlight */
+    background-color: #f4a635; /* Highlight color */
+    z-index: -1; /* Sends the highlight behind the text */
+    border-radius: 5px; /* Optional for rounded edges */
+    /* transition: all 1s ease ; Smooth transition */
+}
+
+
+
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 30%; /* Adjust to align with the text */
+    left: 39%;
+    right: 39%;
+    height: 9%; /* Initial height of the highlight */
+    background-color: #f4a635; /* Highlight color */
+    z-index: -1; /* Sends the highlight behind the text */
+    border-radius: 5px; /* Optional for rounded edges */
+    transition: all 0.5s ease; /* Smooth transition */
+}
+
+h2:hover::after {
+    left: 39%;
+    right: 39%;
+    height: 25%; /* Adjust highlight width */
+}
+
+ section hr  {
+    border:  2px dashed #000;
+  
+    margin: 20px auto; /* Center the line with spacing */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for a 3D effect */
+    margin-bottom: 30px;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6abf4b, #d2ad57);
+     background-clip: text ;
+    -webkit-text-fill-color: transparent; /* Makes the gradient text visible */
+    /* text-fill-color: transparent; Fallback for other browsers */
+}
+h4{
+    font-size: 20px;
+}
+input{
+    width: 100%;
+    margin-bottom: 18px;
+    border: none;
+    outline: #d2ad57;
+    padding: 5px;
+    border-color: #d2ad57;
+}
+
+.btn-{
+    background-color: #d32f2f;
+    border: none;
+    color: #fff;
+   height: 30px;
+    width: 180px;
+    border-radius: 8px;
+    
+    
+}
+
+/* Container and Table Styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.table- {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Header Styling */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Row Styling */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Buttons Styling */
+.visit-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.visit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
